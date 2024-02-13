@@ -89,12 +89,16 @@
 
     .text-adjust {
       /* Move the text down */
-      top: 18%;
+      top: 90%;
+    }
+
+    .vertical-bot-margin {
+      /* Adjust the value as needed */
+      margin-top: 32px; 
     }
 
     /* Turn off parallax scrolling for tablets and phones */
     @media only screen and (max-device-width: 1600px) {
-
       .bgimg-1,
       .bgimg-2,
       .bgimg-3,
@@ -137,7 +141,7 @@
 
   <!-- First Parallax Image with Logo Text -->
   <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-    <div class="w3-display-topleft text-adjust" style="white-space:nowrap;">
+    <div class="w3-display-topmiddle text-adjust" style="white-space:nowrap;">
       <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Kimono
         by fumiko</span>
     </div>
@@ -145,7 +149,7 @@
 
   <!-- Container (About Section) -->
   <div class="w3-content w3-container w3-padding-64" id="about">
-    <h2 class="w3-center">About Me</h2>
+    
     <div class="w3-row">
 
       <div class="w3-col m6 l4 w3-center w3-padding">
@@ -156,7 +160,7 @@
       </div>
 
       <div class="w3-col m6 l8 w3-padding">
-        
+      <h2 class="w3-center">About Me</h2>
       <p>I am Fumiko Horan, a professional kimono stylist born in Taiwan, proficient in
         Chinese, Japanese, and English languages.
         I resided in Japan from 1980 to 2000 and
@@ -180,8 +184,7 @@
     <p>Currently serving as the team leader for kimono attire in the Costume
       Department of the Vancouver Film Industry
       union IATSE Local 891.</p>
-    <p>Planning the kimono showcase for the Vancouver International Fashion
-      Show.</p>
+    <p>Planning the kimono showcase for the Vancouver International Fashion Show.</p>
     <p>Participating in the Vancouver VanDu San Garden Cherry Blossom Festival
       as a kimono-wearing activity coordinator.</p>
     </p>
@@ -190,46 +193,9 @@
     <p>Specializing in 7-5-3 children ceremonies, graduation ceremonies,
       coming-of-age ceremonies, engagement and wedding
       ceremonies, celebrations, and commemorations.</p>
-      <p>Providing services such as kimono rental, wearing assistance,
+    <p>Providing services such as kimono rental, wearing assistance,
       hairstyling, indoor and outdoor photography.</p>
-
-    <!-- <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-      <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-      <div class="w3-light-grey">
-        <div class="w3-container w3-padding-small w3-dark-grey w3-center"
-          style="width:90%">90%</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-      <div class="w3-light-grey">
-        <div class="w3-container w3-padding-small w3-dark-grey w3-center"
-          style="width:85%">85%</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-      <div class="w3-light-grey">
-        <div class="w3-container w3-padding-small w3-dark-grey w3-center"
-          style="width:75%">75%</div>
-      </div> -->
   </div>
-
-  <!-- <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">14+</span><br>
-        Partners
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
-      </div>
-    </div> -->
-
   <!-- Second Parallax Image with Portfolio Text -->
   <div class="bgimg-2 w3-display-container w3-opacity-min">
     <div class="w3-display-middle">
@@ -311,104 +277,102 @@
       <p id="caption" class="w3-opacity w3-large"></p>
     </div>
   </div>
-
+  <!--PRICING-->
   <div class="bgimg-4 w3-display-container w3-opacity-min">
     <div class="w3-display-middle">
       <span class="w3-padding w3-dark-grey w3-xxlarge w3-wide w3-animate-opacity">PRICING</span>
     </div>
   </div>
 
-  <div class="w3-content w3-container w3-padding-64" id="gallery">
-    <h3 class="w3-center">Seven-Five-Three (Shichi-Go-San) for Children</h3>
-        <table class="w3-table-all">
-          <tr>
-            <th>Item</th>
-            <th>Price</th>
-          </tr>
-          <tr>
-            <td>3-year-old girls and boys<br>(Girls - kimono, Boys - hakama)</td>
-            <td>$80</td>
-          </tr>
-          <tr>
-            <td>5-year-old girls and boys<br>(Girls - kimono, Boys - hakama)</td>
-            <td>$110</td>
-          </tr>
-          <tr>
-            <td>7 to 9-year-old girls<br>(Includeing hairstyle and hair accessories)</td>
-            <td>$160</td>
-          </tr>
-          <tr>
-            <td>7 to 9-year-old boys<br>(Includeing hairstyle and hair accessories)</td>
-            <td>$140</td>
-          </tr>
-          </table>
-      <h3 class="w3-center">Seven-Five-Three (Shichi-Go-San) for Children</h3>
-        <div class="w3-row-padding w3-center">
-          <div class="w3-col m4">
-            <div class="image-container">
-              <img src="./images/sample01.jpg" onclick="onClick(this)" class="w3-hover-opacity"
-                alt="The mist over the mountains">
-            </div>
-          </div>
-      
-          <div class="w3-col m4">
-            <div class="image-container">
-              <img src="./images/sample02.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-            </div>
-          </div>
-      
-          <div class="w3-col m4">
-            <div class="image-container">
-              <img src="./images/sample03.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-            </div>
-          </div>
+  <div class="w3-content w3-container w3-padding" id="pricing">
+    <h3 class="w3-center vertical-bot-margin">Seven-Five-Three  years old (Shichi-Go-San) for Children</h3>
+    <div class="w3-row-padding w3-center w3-padding">
+      <div class="w3-col m4">
+        <div class="image-container">
+          <img src="./images/753_01.jpg" onclick="onClick(this)" class="w3-hover-opacity"
+            alt="The mist over the mountains">
         </div>
-        <br>
-        <table class="w3-table-all">
-          <tr>
-            <th>Item</th>
-            <th>Price</th>
-          </tr>
-          <tr>
-            <td>3-year-old girls and boys<br>(Girls - kimono, Boys - hakama)</td>
-            <td>$80</td>
-          </tr>
-          <tr>
-            <td>5-year-old girls and boys<br>(Girls - kimono, Boys - hakama)</td>
-            <td>$110</td>
-          </tr>
-          <tr>
-            <td>7 to 9-year-old girls<br>(Includeing hairstyle and hair accessories)</td>
-            <td>$160</td>
-          </tr>
-          <tr>
-            <td>7 to 9-year-old boys<br>(Includeing hairstyle and hair accessories)</td>
-            <td>$140</td>
-          </tr>
-          </table>
-        <br>
-        <div class="w3-row-padding w3-center">
-          <div class="w3-col m4">
-            <div class="image-container">
-              <img src="./images/sample01.jpg" onclick="onClick(this)" class="w3-hover-opacity"
-                alt="The mist over the mountains">
-            </div>
-          </div>
-      
-          <div class="w3-col m4">
-            <div class="image-container">
-              <img src="./images/sample02.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-            </div>
-          </div>
-      
-          <div class="w3-col m4">
-            <div class="image-container">
-              <img src="./images/sample03.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-            </div>
-          </div>
-        </div>
-  </div>
+      </div>
   
+      <div class="w3-col m4">
+        <div class="image-container">
+          <img src="./images/753_02.jpg" onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+      </div>
+  
+      <div class="w3-col m4">
+        <div class="image-container">
+          <img src="./images/753_03.jpg" onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+      </div>
+    </div>  
+    <table class="w3-table-all">
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>3-year-old girls and boys<br>(Girls - kimono, Boys - hakama)</td>
+          <td>$80</td>
+        </tr>
+        <tr>
+          <td>5-year-old girls and boys<br>(Girls - kimono, Boys - hakama)</td>
+          <td>$110</td>
+        </tr>
+        <tr>
+          <td>7 to 9-year-old girls<br>(Includeing hairstyle and hair accessories)</td>
+          <td>$160</td>
+        </tr>
+        <tr>
+          <td>7 to 9-year-old boys<br>(Includeing hairstyle and hair accessories)</td>
+          <td>$140</td>
+        </tr>
+    </table>
+
+    <h3 class="w3-center vertical-bot-margin">Graduation Ceremony</h3>
+      <div class="w3-row-padding w3-center w3-padding">
+        <div class="w3-col m4">
+          <div class="image-container">
+            <img src="./images/graduation_01.jpg" onclick="onClick(this)" class="w3-hover-opacity">
+          </div>
+        </div>
+    
+        <div class="w3-col m4">
+          <div class="image-container">
+            <img src="./images/graduation_02.jpg" onclick="onClick(this)" class="w3-hover-opacity">
+          </div>
+        </div>
+    
+        <div class="w3-col m4">
+          <div class="image-container">
+            <img src="./images/graduation_03.jpg" onclick="onClick(this)" class="w3-hover-opacity">
+          </div>
+        </div>
+      </div>
+      <table class="w3-table-all">
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Girls Furisode kimono</td>
+          <td>$250</td>
+        </tr>
+        <tr>
+          <td>Girls dressing fee</td>
+          <td>$250</td>
+        </tr>
+        <tr>
+          <td>Boys Haori and Hakama</td>
+          <td>$200</td>
+        </tr>
+        <tr>
+          <td>Boys dressing fee</td>
+          <td>$200</td>
+        </tr>
+      </table>
+      
+  </div>
 
   <!-- Third Parallax Image with Portfolio Text -->
   <div class="bgimg-3 w3-display-container w3-opacity-min">
